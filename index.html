@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My first Vue app</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m8 offset-m2">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Create Todo</span>
+              <form name="addForm" onSubmit="{this.createTodo}">
+                <div class="input-field">
+                  <input
+                    type="text"
+                    name="addText"
+                    placeholder="enter to-do"
+                    class="materialize-textarea"
+                  />
+                  <label htmlFor="addText">Enter todo Text</label>
+                </div>
+                <input class="blue btn white-text" type="submit" value="SAVE" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ul class="collection">
+        <li class="card collection-item col s12 m4">
+          <div class="card-content">
+            <span class="card-title">
+              <label class="right">
+                <input type="checkbox" checked="" />
+                <span>Done</span>
+              </label>
+            </span>
+          </div>
+          <div class="card-action">
+            <input
+              type="button"
+              value="delete"
+              class="waves-effect waves-teal btn-flat"
+            />
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <script></script>
+  </body>
+</html>
